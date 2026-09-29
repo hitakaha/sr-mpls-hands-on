@@ -1,0 +1,52 @@
+site_name: Segment Routing ハンズオン
+site_description: Segment Routing ハンズオン ラボガイド
+# GitHub Pages の公開 URL に合わせて変更してください
+# site_url: https://<github-user>.github.io/<repository>/
+
+nav:
+  - はじめに: index.md
+  - 01. SR-MPLS 基本設定: 01-sr-mpls-basic/index.md
+  - 02. L3VPN: 02-l3vpn/index.md
+  - 03. SR-TE Explicit Path: 03-srte-explicit/index.md
+  - 04. SR-TE Dynamic Path: 04-srte-dynamic/index.md
+  - 05. EVPN VPWS: 05-evpn-vpws/index.md
+  - 06. EVPN VPLS: 06-evpn-vpls/index.md
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+  features:
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: ja
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
